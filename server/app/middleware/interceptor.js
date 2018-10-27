@@ -6,6 +6,10 @@ module.exports = options => {
       return;
     }
     // 根据token值获取用户id
-    ctx.app.token = ctx.header['x-sharebook-token']
-  }
-}
+    ctx.app.token = ctx.header['x-sharebook-token'] || '';
+    // 调用helper处理token
+    let token = new ctx.helper.Token(ctx);
+    ctx.app.userId = await token.getUserId();
+    await next();
+  };
+};
