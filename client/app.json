@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index"
+  ],
+  "windos": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0BCAA8",
+    "navigationBarTitleText": "Share UR Book",
+    "navigationBarTextStyle":"black"
+  }
+}
