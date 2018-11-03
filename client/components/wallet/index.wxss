@@ -1,0 +1,51 @@
+/* components/purchase/index.wxss */
+.ftd-wallet{
+  display: flex;
+  height: 132rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.ftd-walletall_left{
+  display: flex;
+  flex-direction: column;
+}
+
+.ftd-walletall_title{
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.ftd-wallet_status{
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.ftd-wallet_right{
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.ftd-wallet_amount{
+  color: #D73316;
+  font-size: 32rpx;
+  text-align: right;
+}
+
+.ftd-wallet_time{
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.bottomTips{
+  font-size: 28rpx;
+  text-align: center;
+  padding: 50rpx;
+  color: #ccc;
+}

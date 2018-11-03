@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "书单分享",  
+  "usingComponents": {
+    "ftdNav": "/components/nav/index",
+    "ftdBL": "/components/booklist/index",
+    "ftdTip": "/components/tip/index"
+  },
+  "enablePullDownRefresh":true
+}

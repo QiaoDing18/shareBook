@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "写书单",
+  "usingComponents": {
+    "ftdNav": "/components/nav/index",
+    "ftdTip": "/components/tip/index"
+  }
+}

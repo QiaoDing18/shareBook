@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "ftdBLN": "/components/booklistnav/index",
+    "ftdNav": "/components/nav/index",
+    "ftdLock": "/components/lock/index",
+    "ftdContact": "/components/contact/index",
+    "ftdTip": "/components/tip/index"
+  }
+}

@@ -1,0 +1,71 @@
+/* pages/wallet/index.wxss */
+.container{
+  background: #f7f7f7;
+}
+.main{
+  position: relative;
+  background-color: white;
+  width: 750rpx;
+  height: 455rpx;
+  text-align: center;
+}
+.main_img{
+  margin-top: 50rpx;
+  font-size:0;
+}
+.main_img image{
+  width: 82rpx;
+  height: 82rpx;
+}
+.main_intr{
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 30rpx;
+}
+.main_credit{
+  font-size: 44rpx;
+  color: #24253D;
+}
+.main_btn{
+  display: flex;
+  padding: 50rpx 68rpx 0;
+  justify-content: space-between;
+}
+.main_recharge{
+  width: 288rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #D73316;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+
+.main_gowx{
+  font-size: 28rpx;
+  width: 288rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  border: 1px solid #D73316;
+  border-radius: 8rpx;
+  color: #D73316;
+}
+.list{
+  width: 750rpx;
+}
+.list_title{
+  font-size: 24rpx;
+  color: #999999;
+  padding: 35rpx 0 35rpx 35rpx;
+}
+
+.list_content{
+  background-color: white;
+}
+
+.bottomTips{
+  font-size: 28rpx;
+  text-align: center;
+  padding: 50rpx;
+  color: #ccc;
+}

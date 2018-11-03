@@ -1,0 +1,93 @@
+.edit-course{
+  display: flex;
+  flex-direction: column;
+  padding: 118rpx 0 0 0;
+}
+.edit-course .course-inp{
+  width:750rpx;
+  height: 100rpx;
+  padding:0 32rpx;
+  font-size:28rpx;
+  line-height: 100rpx;
+  color:#333333;
+  background-color:#FFFFFF;
+}
+.search-placeholder{
+    color: rgba(36, 37, 61, .3);
+}
+.course-inp .label{
+  float:left;
+  width:390rpx;
+}
+.course-inp .inp-text{
+  float:left;
+  width:290rpx;
+  height: 100rpx;
+}
+.inp-text input{
+  height: 100rpx;  
+}
+
+.course-inp-two{
+  width:750rpx;
+  height: 20rpx;
+  background-color:#F5F5F5;
+}
+.course-add{
+  flex-direction: column;
+}
+.add-text{
+  position: relative;
+  width:574rpx;
+  padding: 17rpx 0;
+  font-size:34rpx;
+  background-color:#F5F5F5;
+  margin:30rpx auto  0;
+  padding-left: 36rpx;
+  padding-right: 60rpx;
+  border-radius: 16rpx;
+  color: #24253D;
+}
+
+.add-text .text{
+    word-break: break-all;
+}
+
+.course-login .login-btn{
+  width:686rpx;
+  height:93rpx;
+  margin:80rpx auto 0;
+  font-size:28rpx;
+  line-height:93rpx;
+  color:#FFFFFF;
+  background-color:#D73316;
+  border-radius: 8rpx;
+}
+
+.login-submit{
+  width:686rpx;
+  height:93rpx;
+  line-height:93rpx;
+  background: #fff;
+  border: 1px solid #D73316; 
+  margin-top: 24rpx;
+  font-size: 28rpx;
+  color: #D73316;
+}
+.login-submit.noMessage{
+  border: 1px solid rgba(36, 37, 61, .2);
+  color: rgba(36, 37, 61, .2);
+}
+
+.close{
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  background: rgba(0, 0, 0, .6);
+  right: 10rpx;
+  top: 10rpx;
+  color: #fff;
+  line-height: 36rpx;
+  text-align: center;
+}

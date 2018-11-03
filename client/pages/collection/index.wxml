@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <ftdNav></ftdNav>
+  <view class="course">
+    <view class="course__title">我的收藏</view>
+    <view class="course-blank" wx:if="{{myCollection.length <= 0}}">
+      <image src="/images/blank-page.png" class="blank-img"></image>
+      <text class="blank-text">
+        还没有收藏课程哦~
+      </text>
+    </view>
+    <view class="course-data" wx:else>
+      <ftdBLN 
+        collections="{{myCollection}}"
+        hasMore="{{hasMore}}"
+        loading="{{loading}}"
+        ></ftdBLN>
+    </view>
+    <ftdTip>
+    </ftdTip>
+  </view>
+</view>

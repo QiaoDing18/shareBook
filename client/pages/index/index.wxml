@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <ftdNav></ftdNav>
+  <view class="serach">
+    <navigator hover-class="none" url="/pages/search/index">请输入专业名称</navigator>
+  </view>
+  <view class="booklist">
+    <ftdBL
+      wx:for="{{courseList}}"
+      wx:key="courseList"
+      title="{{item.title}}"
+      isCollect="{{item.isCollect}}"
+      courseID="{{item.id}}"
+      headImg="{{item.headImg}}"
+      master="{{item.undergraduate}}"
+      payCount="{{item.payCount}}"
+    ></ftdBL>
+  </view>
+  <view class="bottomTips" wx:if="{{ hasMore }}">
+    <view wx:if="{{ loading }}">
+      <text>加载中...</text>
+    </view>
+  </view>
+  <ftdTip>
+  </ftdTip>
+</view>

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "搜索",
+  "usingComponents": {
+    "ftdNav": "/components/nav/index",
+    "ftdBL": "/components/booklist/index",
+    "ftdTip": "/components/tip/index"
+  }
+}

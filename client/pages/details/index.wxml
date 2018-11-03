@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <ftdNav></ftdNav>
+  <view class="userinfo">
+    <image bindtap="bindViewTap" class="userinfo__avatar" src="{{userInfo.avatar}}" mode="cover"></image>
+    <view class="userinfo__all">
+      <view class="userinfo__nickname">{{userInfo.username}}</view>
+      <view class="userinfo__des">{{userInfo.undergraduate}}</view>
+    </view>
+    <view class="userinfo__edit" wx:if="{{showEdit}}">
+        <view class="userinfo__btn" bindtap="editCourse">编辑专业</view>
+    </view>
+  </view>
+  <view class="booklist" wx:for="{{booklist}}">
+    {{item.text}}
+  </view>
+  <ftdLock 
+    wx:if="{{!isPay}}"
+    price="{{price}}"
+    courseID="{{courseID}}"
+    bind:evenPay="hasPay"
+    >
+  </ftdLock>
+  <ftdTip>
+  </ftdTip>
+</view>
