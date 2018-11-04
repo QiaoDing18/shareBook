@@ -10,4 +10,4 @@ run/
 .DS_Store
 *.sw*
 *.un~
-/server/config/config.default.js
+/server/config/
