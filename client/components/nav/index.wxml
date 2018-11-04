@@ -9,6 +9,7 @@
   <view wx:if="{{isShowNav}}" class="ftd-nav__panel">
     <view class="ftd-nav__content"
       wx:for="{{navItems}}"
+      wx:key="navItems"
     >
       <image class="ftd-nav__img" src="{{item.imgUrl}}"></image>
       <navigator hover-class="none" class="ftd-nav__navigator" url="{{item.url}}">{{item.text}}</navigator>

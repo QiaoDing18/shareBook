@@ -65,7 +65,7 @@ Component({
     }
   },
   moved:function(){
-    console.log(123123);
+    console.log('moved function in com/nav/index.js');
   },
   /**
    * 组件的方法列表
