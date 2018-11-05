@@ -1,41 +1,6 @@
 const jwt = require('jsonwebtoken');
 const secret = 'FTD#@HBJRR@@gf';
 
-
-// exports.token = {
-// 	async create(userInfo){
-// 		const token = jwt.sign(userInfo, secret);
-// 		return token;
-// 	},
-
-// 	async parse(ctx) {
-// 	  if (ctx.app.token) {
-// 	    try {
-// 	      return jwt.verify(ctx.app.token, secret);
-// 	    } catch (err) {
-// 	      return null;
-// 	    }
-// 	  }
-// 	  return null;
-// 	},
-
-// 	async getUserId(ctx){
-// 	  const token = ctx.app.token;
-// 	  console.log(123123, app);
-// 	  if (!token) {
-// 	    return 0;
-// 	  }
-
-// 	  // const result = await this.parse(ctx);
-// 	  // console.log('result', result);
-// 	  // if (isEmpty(result) || result.user_id <= 0) {
-// 	  //   return 0;
-// 	  // }
-
-// 	  // return result.user_id;
-// 	}
-// }
-
 const isEmpty = function(obj){
 	if(obj) return false;
 	return true;

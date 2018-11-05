@@ -58,10 +58,11 @@ class AuthController extends Base {
 		
 		sessionData.data.user_id = userMsg.id;
 		// 查询用户信息
+		console.log('前置id:', userMsg)
 		const resultNewUser = await ctx.service.user.find({
 			id: userMsg.id
 		});
-		
+		console.log('我需要的:', resultNewUser)
 		const newUserInfo = {
 			avatar: resultNewUser.avatar,
 			username: resultNewUser.username,

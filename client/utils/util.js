@@ -83,7 +83,7 @@ const checkSession = ()=> {
 
 
 /**
- * 封封微信的的request
+ * 封装微信的的request
  */
 const request = (url, data = {}, method = "POST")=> {
   return new Promise(function (resolve, reject) {

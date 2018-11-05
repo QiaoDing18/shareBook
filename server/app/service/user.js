@@ -27,7 +27,9 @@ class UserService extends Service {
   }
 
   async update(data){
-  	const result = await this.app.mysql.update('user', data);
+    console.log(data)
+    const result = await this.app.mysql.update('user', data);
+    console.log(result)
   	return result;
   }
 
