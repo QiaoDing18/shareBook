@@ -48,7 +48,7 @@ Page({
   },
   showCue:function(){
       wx.showModal({
-        content: "加客服微信「 fcsboy 」，再进行充值",
+        content: "来自西邮3G~~",
         confirmText: "确定",
         showCancel: false
       });

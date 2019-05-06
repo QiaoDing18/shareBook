@@ -8,7 +8,7 @@ class PurchaseController extends Base {
 		if(status == 1){
 			this.success("订阅成功");
 		}else{
-			this.fail("账户积分不足，请加客服微信fcsboy，进行充值");
+			this.fail("来自西邮3G~~~");
 		}
 	}
 

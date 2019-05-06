@@ -38,15 +38,6 @@
 					<span>{{scope.row.tel_id}}</span>
 				</template>
 			</el-table-column>
-			<el-table-column align="center" label="积分"  class-name="small-padding fixed-width">
-				<template slot-scope="scope">
-					<template v-if="scope.row.edit">
-						<el-input class="edit-input" size="small" v-model="scope.row.credit"></el-input>
-						<el-button class='cancel-btn' size="small" icon="el-icon-refresh" type="warning" @click="cancelEdit(scope.row)">cancel</el-button>
-					</template>
-					<span v-else>{{ scope.row.credit }}</span>
-				</template>
-			</el-table-column>
 			<el-table-column align="center" label="操作" class-name="small-padding fixed-width">
 				<template slot-scope="scope">
 					<el-button v-if="scope.row.edit" type="success" @click="confirmEdit(scope.row)" size="small" icon="el-icon-circle-check-outline">Ok</el-button>

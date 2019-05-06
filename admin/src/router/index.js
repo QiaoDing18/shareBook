@@ -32,13 +32,8 @@ export default new Router({
             children: [{
                 path: '/review',
                 component: review,
-                name: '文章审核机制',
-                meta: {nav: ['内容管理', '文章审核机制']}
-            },{
-                path: '/enchashment',
-                component: enchashment,
-                name: '用户提现记录',
-                meta: {nav: ['用户管理', '用户提现记录']}
+                name: '审核',
+                meta: {nav: ['内容管理', '审核']}
             },{
                 path: '/userinfo',
                 component: userInfo,

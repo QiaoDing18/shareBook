@@ -11,6 +11,7 @@ const loginByWeixin = ()=> {
 	    code = res.code;
 	    return util.getUserInfo();
 	  }).then((userInfo) => {
+			// console.log(userInfo)
 	    //登录远程服务器
       util.request("auth/loginByWeixinAction", { code: code, userInfo: userInfo }, 'POST').then(res => {
         if (res.status === 0) {

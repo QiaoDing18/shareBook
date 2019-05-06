@@ -2,12 +2,13 @@
 <view class="container">
   <ftdNav></ftdNav>
   <view class="search">
-    <input class="search__input" bindinput="bindKeyInput" placeholder="请输入专业名称" placeholder-class="search__placeholder"></input>
+    <input class="search__input" bindinput="bindKeyInput" placeholder="想搜那种类型的书刊呢" placeholder-class="search__placeholder"></input>
     <view class="search__btn" bindtap="search">搜索</view>
   </view>
   <view class="booklist" wx:if="{{courseList.length > 0}}">
     <ftdBL
       wx:for="{{courseList}}"
+      wx:key="courseList"
       title="{{item.title}}"
       isCollect="{{item.isCollect}}"
       courseID="{{item.id}}"

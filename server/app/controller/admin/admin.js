@@ -5,19 +5,22 @@ class AdminController extends Base {
 	async add(){
 		const {ctx} = this;
 		const username = "admin";
-    	const password = "888888";
-    	const addTime = ctx.helper.timest();
+		const password = "888888";
+		const addTime = ctx.helper.timest();
 
-    	// 密码加盐操作
-    	const saltRounds = 10;
-    	const salt = bcrypt.genSaltSync(saltRounds);
+		// 密码加盐操作
+		const saltRounds = 10;
+		const salt = bcrypt.genSaltSync(saltRounds);
 		const hash = bcrypt.hashSync(password, salt);
+
+		console.log(hash, salt, addTime)
 
 		if(!username || !password || !salt || !hash){
 			return this.fail("参数无效");
 		}
 
 		// 把 salt 和 hash 存入数据库
+		console.log(username, hash, salt, addTime)
 		const result = await ctx.service.admin.admin.insert({
 			username: username,
 			password_hash: hash,
@@ -32,5 +35,4 @@ class AdminController extends Base {
 		}
 	}
 }
-
 module.exports = AdminController;

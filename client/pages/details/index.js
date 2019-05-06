@@ -38,10 +38,15 @@ Page({
         let arr = [];
         let result = res.result;
         let resultList = util.splitStr(result.my_course);
+        let tempArr = [];
         for (let index in resultList) {
+          // console.log('-------------resultList[index]-----------------', resultList[index]);
+          tempArr =  resultList[index].split('。');
           arr.push({
-            text: resultList[index]
+            text: tempArr[0],
+            commit: tempArr[1],
           })
+          // console.log('-------------arr-----------------', arr);
         }
         that.setData({
           booklist: arr,

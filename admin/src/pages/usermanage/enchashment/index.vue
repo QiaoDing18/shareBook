@@ -44,16 +44,6 @@
 					<span>{{scope.row.tel_id}}</span>
 				</template>
 			</el-table-column>
-			<el-table-column align="center" label="提现积分">
-				<template slot-scope="scope">
-					<span>{{scope.row.enchashment_credit}}</span>
-				</template>
-			</el-table-column>
-			<el-table-column align="center" label="提现金额">
-				<template slot-scope="scope">
-					<span>{{scope.row.enchashment_credit | calculatCash}}</span>
-				</template>
-			</el-table-column>
 			<el-table-column align="center" label="状态" class-name="small-padding fixed-width">
 				<template slot-scope="scope">
 					<span>{{scope.row.verify | statusFilter}}</span>

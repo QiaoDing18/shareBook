@@ -17,7 +17,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    title: "写书单",
+    title: "去分享",
     src : "/images/head.png",
     penimg: "/images/pen.png",
     logo: "/images/logo.png",
@@ -27,19 +27,9 @@ Component({
       imgUrl: "/images/1.png"
     },{
       url: "/pages/myblist/index",
-      text: "我的书单",
+      text: "我的书刊",
       imgUrl: "/images/2.png"
     },
-    // {
-    //   url: "/pages/purchase/index",
-    //   text: "我的订阅",
-    //   imgUrl: "/images/3.png"
-    // },
-    // {
-    //     url: "/pages/wallet/index",
-    //     text: "我的钱包",
-    //     imgUrl: "/images/4.png"
-    // },
     {
       url: "/pages/setting/index",
       text: "我的设置",
@@ -59,9 +49,10 @@ Component({
     }
 
     if (appInstance.globalData.userInfo.avatar){
-        this.setData({
-            src: appInstance.globalData.userInfo.avatar,
-        });
+      this.setData({
+        // 头像获取还有问题
+        src: appInstance.globalData.userInfo.avatar,
+      });
     }
   },
   moved:function(){

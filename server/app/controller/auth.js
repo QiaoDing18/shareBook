@@ -5,7 +5,7 @@ const util = new Util();
 class AuthController extends Base {
 	constructor(props) {
 		super(props);
-		this.token =new this.ctx.helper.Token(this.ctx);
+		this.token = new this.ctx.helper.Token(this.ctx);
 	}
 	async loginByWeixinAction() {
 		let token = new this.ctx.helper.Token(this.ctx);
@@ -48,7 +48,6 @@ class AuthController extends Base {
 				avatar: userInfo.avatarUrl || '',
 				gender: userInfo.gender || 1, // 性别 0：未知、1：男、2：女
 			});
-			
 			if(result.affectedRows === 1){
 				console.log("插入成功");
 			}
@@ -58,11 +57,9 @@ class AuthController extends Base {
 		
 		sessionData.data.user_id = userMsg.id;
 		// 查询用户信息
-		console.log('前置id:', userMsg)
 		const resultNewUser = await ctx.service.user.find({
 			id: userMsg.id
 		});
-		console.log('我需要的:', resultNewUser)
 		const newUserInfo = {
 			avatar: resultNewUser.avatar,
 			username: resultNewUser.username,

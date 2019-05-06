@@ -25,7 +25,6 @@ const login = ()=> {
       success: function (res) {
         if (res.code) {
           //登录远程服务器
-          console.log(res)
           resolve(res);
         } else {
           reject(res);
@@ -47,7 +46,6 @@ const getUserInfo = ()=>{
                   wx.getUserInfo({
                       withCredentials: true,
                       success: function (res) {
-                          console.log(res)
                           resolve(res);
                       },
                       fail: function (err) {

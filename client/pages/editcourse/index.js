@@ -6,6 +6,8 @@ Page({
       titleInp:'',
       nameInp:'',
       authorInp:'',
+      // 点评
+      commit: '',
       courseList:[],
       author:'',
       allCourse: '',
@@ -68,23 +70,38 @@ Page({
         authorInp:e.detail.value
       })
     },
+    commit(e){
+      this.setData({
+        commit:e.detail.value
+      })
+    },
     addBtnClick(){
       var list=this.data.courseList;
       if (this.data.nameInp == '' || this.data.authorInp == ''){
         wx.showToast({
-            title: '书单信息不能为空',
+            title: '书刊信息不能为空',
             icon: 'none'
         });
         return;
       }
-      list.push({name: "《"+this.data.nameInp+"》"+' '+this.data.authorInp+"著"});
+      if (this.data.commit == ''){
+        wx.showToast({
+            title: '点评信息不能为空',
+            icon: 'none'
+        });
+        return;
+      }
+      list.push({name: "《"+this.data.nameInp+"》"+' '
+                        +this.data.authorInp+"著。"
+                        +"点评："+this.data.commit});
       this.setData({
         courseList:list
       });
       this.setData({
         allCourse: this.regroup(),
         nameInp: '',
-        authorInp:''
+        authorInp:'',
+        commit: ''
       })
     },
     regroup(){
@@ -108,14 +125,14 @@ Page({
         return;
       if (this.data.titleInp == "") {
         wx.showToast({
-          title: '专业名不能为空',
+          title: '书刊类型不能为空',
           icon: 'none'
         })
         return;
       }
       if (this.data.allCourse == "") {
         wx.showToast({
-          title: '书单信息不能为空',
+          title: '书刊信息不能为空',
           icon: 'none'
         })
         return;

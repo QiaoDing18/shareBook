@@ -42,7 +42,6 @@ class CourseService extends Service {
 			tmp = result[0];
 		}
 
-		// 自己写的课程和价格为0的课程直接公开
 		if(tmp && tmp.user_id && tmp.user_id == app.userId || tmp.price == 0){
 			tmp.isPay = true;
 			// 自己写的文章展示编辑
@@ -61,7 +60,6 @@ class CourseService extends Service {
 		if(resultPurchase){
 			tmp.isPay = true;
 		}else{
-			// 未购买课程只公开一半
 			tmp.my_course = ctx.helper.halfArr(tmp.my_course);
 			tmp.isPay = false;
 		}

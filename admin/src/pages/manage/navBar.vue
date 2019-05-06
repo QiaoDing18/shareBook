@@ -4,7 +4,7 @@
 			<el-breadcrumb-item :to="{ path: '/manage' }">首页</el-breadcrumb-item>
 			<el-breadcrumb-item v-for="(item, index) in $route.meta.nav" :key="index">{{item}}</el-breadcrumb-item>
 		</el-breadcrumb>
-		<tabs-view></tabs-view>
+		<!-- <tabs-view></tabs-view> -->
 		<div class="avatar-container">
 			<el-dropdown>
 				<span class="el-dropdown-link">

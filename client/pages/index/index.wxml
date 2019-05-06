@@ -2,7 +2,7 @@
 <view class="container">
   <ftdNav></ftdNav>
   <view class="serach">
-    <navigator hover-class="none" url="/pages/search/index">请输入专业名称</navigator>
+    <navigator hover-class="none" url="/pages/search/index">想搜那种类型的书刊呢</navigator>
   </view>
   <view class="booklist">
     <ftdBL

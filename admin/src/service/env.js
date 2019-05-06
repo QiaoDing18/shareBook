@@ -3,7 +3,7 @@
  * 
  * baseUrl: 域名地址
  * routerMode: 路由模式
- * imgBaseUrl: 图片所在域名地址
+ * 
  * 
  */
 
@@ -12,7 +12,8 @@ let routerMode = 'history';
 let imgBaseUrl = '';
 
 
-baseUrl = 'https://www.duolaimier.cn/';
+baseUrl = 'http://127.0.0.1:7001/';
+// baseUrl = 'http://192.168.43.123:7001/';
 
 // baseUrl = 'http://192.168.5.105:8088/manage';
 // if (process.env.NODE_ENV == 'development') {

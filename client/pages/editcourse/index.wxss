@@ -27,6 +27,12 @@
 .inp-text input{
   height: 100rpx;  
 }
+.inp-text textarea{
+  width:290rpx;
+  max-height:120rpx;
+  line-height:40rpx;
+  padding-top:30rpx;
+}
 
 .course-inp-two{
   width:750rpx;
@@ -56,7 +62,7 @@
 .course-login .login-btn{
   width:686rpx;
   height:93rpx;
-  margin:80rpx auto 0;
+  margin:100rpx auto 0;
   font-size:28rpx;
   line-height:93rpx;
   color:#FFFFFF;
@@ -70,7 +76,7 @@
   line-height:93rpx;
   background: #fff;
   border: 1px solid #D73316; 
-  margin-top: 24rpx;
+  margin-top: 44rpx;
   font-size: 28rpx;
   color: #D73316;
 }

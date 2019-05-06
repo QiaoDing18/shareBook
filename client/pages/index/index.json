@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "书单分享",  
+  "navigationBarTitleText": "书刊点评",  
   "usingComponents": {
     "ftdNav": "/components/nav/index",
     "ftdBL": "/components/booklist/index",

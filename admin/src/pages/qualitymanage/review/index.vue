@@ -16,10 +16,10 @@
 					<el-input @keyup.enter.native="handleCtr" style="width: 200px;" placeholder="请输入微信号" v-model="listQuery.wechat_id">
 					</el-input>
 				</el-form-item>
-				<el-form-item label="专业名称">
-					<el-input @keyup.enter.native="handleCtr" style="width: 200px;" placeholder="请输入专业名" v-model="listQuery.title">
+				<!-- <el-form-item label="来自哪里">
+					<el-input @keyup.enter.native="handleCtr" style="width: 200px;" placeholder="" v-model="listQuery.title">
 					</el-input>
-				</el-form-item>
+				</el-form-item> -->
 				<el-form-item>
 					<el-button type="primary" icon="el-icon-search" @click="handleCtr">查询</el-button>
 				</el-form-item>
@@ -29,14 +29,14 @@
       	style="width: 100%">
 			<el-table-column type="index" align="center" label="ID" width="80">
 			</el-table-column>
-			<el-table-column align="center" label="专业名称" width="200">
+			<el-table-column align="center" label="分类" width="200">
 				<template slot-scope="scope">
 					<span>{{scope.row.title}}</span>
 				</template>
 			</el-table-column>
-			<el-table-column min-width="180" align="center" label="课程">
+			<el-table-column min-width="200" align="center" label="详情">
 				<template slot-scope="scope">
-					<span>{{scope.row.my_course}}</span>
+					<span style="textAlign:left">{{scope.row.my_course}}</span>
 				</template>
 			</el-table-column>
 			<el-table-column align="center" label="用户名" width="120">
