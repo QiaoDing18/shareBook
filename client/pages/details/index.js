@@ -41,7 +41,7 @@ Page({
         let tempArr = [];
         for (let index in resultList) {
           // console.log('-------------resultList[index]-----------------', resultList[index]);
-          tempArr =  resultList[index].split('。');
+          tempArr =  resultList[index].split('_');
           arr.push({
             text: tempArr[0],
             commit: tempArr[1],

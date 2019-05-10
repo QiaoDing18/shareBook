@@ -45,9 +45,20 @@
 .booklist{
   width: 630rpx;
   padding: 17rpx 22rpx 17rpx 18rpx;
-  font-size: 34rpx;
+  font-size: 32rpx;
   color: #24253D;
   background: #F5F5F5;
   border-radius: 16rpx;
   margin-bottom: 20rpx;
+}
+.booklist-item{
+  line-height:55rpx;
+}
+.set-high{
+  font-size:40rpx;
+  font-weight:bold;
+}
+.booklist-item-img{
+  width:100%;
+  margin:0 auto;
 }

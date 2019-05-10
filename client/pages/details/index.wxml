@@ -12,8 +12,9 @@
     </view>
   </view>
   <view class="booklist" wx:for="{{booklist}}" wx:key="booklist">
-    <text>{{item.text}}</text>
-    <text>{{item.commit}}</text>
+    <image class="booklist-item-img" src="http://tjoe18.cn/book.png" mode="cover"></image>
+    <view class="booklist-item-box"><text class="booklist-item set-high">{{item.text}}</text></view>
+    <view class="booklist-item-box"><text class="booklist-item">{{userInfo.username}}{{item.commit}}</text></view>
   </view>
   
 </view>

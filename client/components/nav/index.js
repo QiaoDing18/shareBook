@@ -27,7 +27,7 @@ Component({
       imgUrl: "/images/1.png"
     },{
       url: "/pages/myblist/index",
-      text: "我的书刊",
+      text: "我的分享",
       imgUrl: "/images/2.png"
     },
     {

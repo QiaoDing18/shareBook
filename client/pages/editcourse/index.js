@@ -92,7 +92,7 @@ Page({
         return;
       }
       list.push({name: "《"+this.data.nameInp+"》"+' '
-                        +this.data.authorInp+"著。"
+                        +this.data.authorInp+"著_"
                         +"点评："+this.data.commit});
       this.setData({
         courseList:list

@@ -1,8 +1,18 @@
 <!--index.wxml-->
 <view class="container">
   <ftdNav></ftdNav>
+  <swiper class='wrp-bnr' indicator-dots='true' autoplay='true' interval='3000' duration='800' circular='true'>
+    <block wx:for="{{bnrUrl}}" wx:key="index">
+      <swiper-item>
+        <image src='{{item.url}}' class='img-slide' mode='aspectFill'></image>
+      </swiper-item>
+    </block>
+  </swiper>
   <view class="serach">
-    <navigator hover-class="none" url="/pages/search/index">想搜那种类型的书刊呢</navigator>
+    <navigator class="search-nav" hover-class="none" url="/pages/search/index">想搜那种类型的书刊呢</navigator>
+  </view>
+  <view>
+    
   </view>
   <view class="booklist">
     <ftdBL

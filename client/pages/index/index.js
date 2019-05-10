@@ -8,7 +8,14 @@ Page({
     size: 30,
     courseList:[],
     hasMore: false,
-    loading: false
+    loading: false,
+    "bnrUrl": [{
+      "url": "http://tjoe18.cn/1.jpg"
+    }, {
+      "url": "http://tjoe18.cn/2.jpg"
+    }, {
+      "url": "http://tjoe18.cn/3.jpg"
+    }]
   },
   //事件处理函数
   bindViewTap: function() {
